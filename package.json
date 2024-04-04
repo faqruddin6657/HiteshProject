@@ -1,0 +1,16 @@
+{
+  "name": "hiteshproject",
+  "version": "1.0.0",
+  "description": "this is a website building project using nodejs and react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "code",
+    "and",
+    "chai"
+  ],
+  "author": "shaikh faqruddin",
+  "license": "ISC"
+}
