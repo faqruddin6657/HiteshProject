@@ -1,14 +1,26 @@
 //require('dotenv').config({path:'./env'})
-import connectDB from "./db/connect.js"
-import express from "express"
-import dotenv from "dotenv"
-import { DB_NAME } from "./constants.js"
 
+import dotenv from "dotenv"
 dotenv.config({path:'./env'})
+
+import {connectDB} from "./db/connect.js"
+import express from "express"
 const app= express()
-console.log(DB_NAME)
+
+
 
 connectDB()
+.then(()=>{
+    app.listen(process.env.PORT || 8000,()=>{
+        console.log(`listening on port ${process.env.PORT}`)
+    })
+
+}).catch((error)=>{
+    console.log("error in db ", error)
+})
+
+
+
 
 
 
