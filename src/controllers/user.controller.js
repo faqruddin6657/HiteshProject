@@ -455,5 +455,6 @@ export {
   registerUser,
   loginUser, logoutUser,
   refreshAccessToken, changeCurrentPassword,
-  getCurrentUser, updateAccountDetails, updateUserAvatar, updateUserCoverImage, getUserChannelProfile
+  getCurrentUser, updateAccountDetails, updateUserAvatar, updateUserCoverImage, getUserChannelProfile,
+  getWatchHistory
 }
